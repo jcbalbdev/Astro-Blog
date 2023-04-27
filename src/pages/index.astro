@@ -1,9 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Greeting from '../components/Greeting.jsx';
-const pageTitle = "Home Page";
+
+const pageTitle = "El Dev Master";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
-  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+  <h1 class="font-extrabold text-6xl text-slate-950 pb-2">{pageTitle}</h1>
+  <p class="font-normal text-base text-slate-800 pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam corrupti voluptates numquam dolorum veritatis quasi accusamus sunt placeat temporibus similique. Animi illum ratione perferendis quas? Sunt nesciunt aliquid officia officiis!</p>
 </BaseLayout>

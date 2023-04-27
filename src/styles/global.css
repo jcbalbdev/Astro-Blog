@@ -1,4 +1,4 @@
-html {
+/* html {
   background-color: #f1f5f9;
   font-family: sans-serif;
 }
@@ -27,7 +27,7 @@ h1 {
   font-size: 2.5rem;
 }
 
-/* nav styles */
+
 
 .hamburger {
   padding-right: 20px;
@@ -86,4 +86,4 @@ h1 {
   .hamburger {
     display: none;
   }
-}
+} */

@@ -6,7 +6,9 @@ import "../styles/global.css";
 const { pageTitle } = Astro.props;
 ---
 
-<html lang="en">
+<html 
+class="bg-zinc-900"
+lang="en">
 
   <head>
     <meta charset="utf-8" />
@@ -19,7 +21,7 @@ const { pageTitle } = Astro.props;
   <body>
     <Navigation/>
     <Header />
-    <main class="p-4 ">
+    <main class="w-full max-w-3xl min-w-0 min-h-screen px-6 pt-6 m-auto mb-24 ">
       <slot />
     </main>
     <Footer />

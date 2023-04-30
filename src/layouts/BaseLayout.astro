@@ -1,35 +1,36 @@
 ---
 import Header from "../components/Header.astro";
-import Navigation from '../components/Navigation.astro';
+import Sidebar from "../components/Sidebar.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 const { pageTitle } = Astro.props;
 ---
 
-<html 
-class="bg-zinc-900"
-lang="en">
-
+<html class="bg-zinc-900" lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
+    <script src="https://kit.fontawesome.com/b4616cc7a8.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <Navigation/>
-    <Header />
-    <main class="w-full max-w-3xl min-w-0 min-h-screen px-6 pt-6 m-auto mb-24 ">
-      <slot />
-    </main>
-    <Footer />
+    <Sidebar/>
+    <div class="flex flex-col h-screen w-full">
+      <Header />
+      <div class="flex-grow">
+        <main class="w-full max-w-3xl min-w-0 min-h-screen px-6 pt-6 mt-10 m-auto mb-24">
+          <slot />
+        </main>
+      </div>
+      <Footer />
+    </div>
 
-<!--     <script>
+    <!--     <script>
       import "../scripts/menu.js";
     </script>
 -->
   </body>
-
 </html>

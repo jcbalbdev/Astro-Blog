@@ -1,0 +1,16 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Html"
+---
+<BaseLayout pageTitle={pageTitle}>
+<h1 class="font-extrabold text-5xl text-yellow-500 mt-0 mb-4">{pageTitle}</h1>
+<code class="inline-block min-w-fit  py-4 px-6 mb-5 rounded-lg text-xs text-slate-50 bg-stone-700">
+  <strong>version actual: </strong>HTML 5
+</code>
+<h2 class="font-bold text-3xl text-yellow-500 mt-0 mb-4">¿Que es {pageTitle}?
+</h2>
+<p class="font-base text-lg text-slate-50 mb-4">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repudiandae quisquam fuga harum tenetur, provident eligendi illo! Ullam nisi eos, dolor, quae et, vitae atque iste sapiente velit optio aperiam.
+<p/>
+
+</BaseLayout>
